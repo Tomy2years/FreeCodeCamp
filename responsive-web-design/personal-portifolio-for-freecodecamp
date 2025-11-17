@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    #navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    #welcome-section {
+      height: 100vh;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #projects {
+      padding: 20px;
+      background: #eaeaea;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .project-tile {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 600px) {
+      #navbar {
+        flex-direction: column;
+      }
+
+      #welcome-section {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <a href="#welcome-section">Welcome</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="welcome-section">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I'm Tom. Check out my work below!</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form" class="project-tile" target="_blank">
+      <h3>Survey Project</h3>
+      <p>This was the survey project</p>
+    </a>
+    <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-tribute-page-project/build-a-tribute-page" class="project-tile" target="_blank">
+      <h3>Mighty Tribute Page</h3>
+      <p>This was a tribute page to my favorite MMA fighter</p>
+    </a>
+    <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page" class="project-tile" target="_blank">
+      <h3>Technical Documentation Page</h3>
+      <p>This was the hardest project in my opinion</p>
+    </a>
+  </section>
+
+  <footer>
+    <a id="profile-link" href="https://www.freecodecamp.org/TomPerel" target="_blank">Visit my freeCodeCamp profile</a>
+  </footer>
+</body>
+</html>
